@@ -1,7 +1,18 @@
 import './App.css';
+import './index.css';
+import useTheme from './hooks/useTheme';
 
 function App() {
-  return <></>;
+  const { theme, toggleTheme } = useTheme();
+  console.log(theme);
+
+  return (
+    <div>
+      <button className='text-textLight dark:text-textDark text-xl' onClick={toggleTheme}>
+        Whereas recognition of the inherent dignity
+      </button>
+    </div>
+  );
 }
 
 export default App;
