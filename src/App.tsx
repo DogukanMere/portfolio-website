@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <button className='text-textLight dark:text-textDark text-xl' onClick={toggleTheme}>
-        Whereas recognition of the inherent dignity
+        {theme}
       </button>
     </div>
   );
