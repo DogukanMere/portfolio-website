@@ -1,17 +1,18 @@
 import './App.css';
 import './index.css';
 import useTheme from './hooks/useTheme';
+import Layout from './layout/Layout';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
   console.log(theme);
 
   return (
-    <div>
-      <button className='text-textLight dark:text-textDark text-xl' onClick={toggleTheme}>
-        {theme}
-      </button>
-    </div>
+    <Layout>
+      <div className='h-screen'>Test</div>
+      <div className='h-screen'>Test</div>
+      <div className='h-screen'>Test</div>
+    </Layout>
   );
 }
 
