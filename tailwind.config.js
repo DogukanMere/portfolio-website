@@ -11,6 +11,7 @@ export default {
       textDark: '#ffffff',
       textLight: '#242424',
       secondary: '#ffcc00',
+      yellow: '#e0be24',
       accent: '#56afff',
       background: '#f5f5f5',
       text: '#333',
