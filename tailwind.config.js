@@ -11,7 +11,7 @@ export default {
       textDark: '#ffffff',
       textLight: '#242424',
       secondary: '#ffcc00',
-      accent: '#ff69b4',
+      accent: '#56afff',
       background: '#f5f5f5',
       text: '#333',
       blackTransDark: 'rgba(0, 0, 0, 0.9)',

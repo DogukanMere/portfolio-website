@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/images/logo.png';
-import NavHamburger from './NavHamburger';
+import logoDark from '../assets/images/logoDark.png';
 import { Cross as Hamburger } from 'hamburger-react';
 import NavItem from './NavItem';
 
@@ -20,13 +20,15 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
   return (
     <nav className='fixed bg-bgNavLight h-10 px-3 py-10 mb-4 sm:mb-0 flex items-center justify-between sm:justify-center sm:flex-col dark:bg-bgNavDark border-b-[2px] sm:border-r-[2px] sm:border-b-0 border-bgDark dark:border-bgLight w-full sm:h-screen sm:w-[12rem]'>
       {/* Logo */}
-      <img src={logo} alt='Dogukan Logo' className='w-16 sm:w-24 p-3 sm:absolute top-10' />
+      <a href='#home' className='p-3 sm:absolute top-10'>
+        <img src={theme === 'dark' ? logo : logoDark} alt='Dogukan Logo' className='w-16 sm:w-24' />
+      </a>
 
       {/* Mobile */}
       <>
         {/* Hamburger Icon */}
         <div className='sm:hidden fixed right-5 z-50 cursor-pointer'>
-          <Hamburger toggled={isOpen} toggle={toggleMenu} color={`${!isOpen ? '#fff' : '#fff'}`} size={30} rounded label='Show menu' />
+          <Hamburger toggled={isOpen} toggle={toggleMenu} color={`${isOpen ? '#fff' : theme === 'dark' ? '#fff' : '#242424'}`} size={30} rounded label='Show menu' />
         </div>
 
         {/* Overlay */}
@@ -35,9 +37,13 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
         {isOpen && (
           <div className='sm:hidden fixed top-0 left-0 w-full h-fit z-40 overflow-y-auto text-paper' onClick={toggleMenu}>
             <div className='w-full max-w-[400px] p-8 mx-auto'>
-              <div className='h-screen flex flex-col relative justify-center items-center text-nowrap gap-y-10 font-bold uppercase'>
-                <p>asdad</p>
-              </div>
+              <ul className='h-screen flex flex-col relative justify-center items-center text-nowrap gap-y-10 font-bold uppercase'>
+                <NavItem itemName='Home' link='#home' textColor={theme} isMobile={true} />
+                <NavItem itemName='Projects' link='#projects' textColor={theme} isMobile={true} />
+                <NavItem itemName='Skills' link='#skills' textColor={theme} isMobile={true} />
+                <NavItem itemName='About' link='#about' textColor={theme} isMobile={true} />
+                <NavItem itemName='Contact' link='#contact' textColor={theme} isMobile={true} />
+              </ul>
             </div>
           </div>
         )}
@@ -46,11 +52,11 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
       {/* Desktop */}
       <>
         <ul className='hidden sm:flex flex-col gap-y-6 uppercase font-semibold text-md tracking-[-0.4px]'>
-          <NavItem itemName='Home' link='#home' textColor={theme} textSize='16px' />
-          <NavItem itemName='Projects' link='#projects' textColor={theme} textSize='16px' />
-          <NavItem itemName='Skills' link='#skills' textColor={theme} textSize='16px' />
-          <NavItem itemName='About' link='#about' textColor={theme} textSize='16px' />
-          <NavItem itemName='Contact' link='#contact' textColor={theme} textSize='16px' />
+          <NavItem itemName='Home' link='#home' textColor={theme} />
+          <NavItem itemName='Projects' link='#projects' textColor={theme} />
+          <NavItem itemName='Skills' link='#skills' textColor={theme} />
+          <NavItem itemName='About' link='#about' textColor={theme} />
+          <NavItem itemName='Contact' link='#contact' textColor={theme} />
         </ul>
       </>
     </nav>

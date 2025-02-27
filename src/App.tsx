@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Layout>
-      <div className='h-screen'>Test</div>
+      <div className='h-screen dark:text-bgLight text-bgDark'>Test</div>
       <div className='h-screen'>Test</div>
       <div className='h-screen'>Test</div>
     </Layout>
