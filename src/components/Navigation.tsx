@@ -38,7 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
         {isOpen && <div className='sm:hidden fixed inset-0 z-40 bg-blackTransDark' onClick={toggleMenu}></div>}
 
         {isOpen && (
-          <div className='sm:hidden fixed top-0 left-0 w-full h-fit z-40 overflow-y-auto text-paper' onClick={toggleMenu}>
+          <div className='sm:hidden fixed top-0 left-0 w-full h-fit z-40 overflow-y-auto' onClick={toggleMenu}>
             <div className='w-full max-w-[400px] p-8 mx-auto'>
               <ul className='h-screen flex flex-col relative justify-center items-center text-nowrap gap-y-10 font-bold uppercase'>
                 <NavItem itemName='Home' link='#home' textColor={theme} isMobile={true} />
@@ -46,6 +46,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
                 <NavItem itemName='Skills' link='#skills' textColor={theme} isMobile={true} />
                 <NavItem itemName='About' link='#about' textColor={theme} isMobile={true} />
                 <NavItem itemName='Contact' link='#contact' textColor={theme} isMobile={true} />
+                <SocialMedia theme={theme} isMobile={true} />
               </ul>
             </div>
           </div>

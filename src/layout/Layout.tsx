@@ -14,9 +14,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div className='flex flex-col sm:flex-row min-h-screen'>
       <Navigation theme={theme} />
       <ThemeSwitch theme={theme} setTheme={toggleTheme} />
-      <div className='sm:pl-[14rem] sm:pr-[2rem] sm:py-4 w-full'>
-        <main>{children}</main>
-
+      <div className=' px-4 sm:pl-[14rem] sm:pr-[2rem] sm:py-4 w-full'>
+        <main className='pt-[6rem] sm:pt-0'>{children}</main>
         <footer></footer>
       </div>
     </div>

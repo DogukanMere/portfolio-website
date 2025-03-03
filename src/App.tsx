@@ -9,9 +9,15 @@ function App() {
 
   return (
     <Layout>
-      <div className='h-screen dark:text-bgLight text-bgDark'>Test</div>
-      <div className='h-screen'>Test</div>
-      <div className='h-screen'>Test</div>
+      <div id='home' className='h-screen dark:text-bgLight text-bgDark'>
+        Test
+      </div>
+      <div id='about' className='h-screen'>
+        about
+      </div>
+      <div id='contact' className='h-screen'>
+        contact
+      </div>
     </Layout>
   );
 }
