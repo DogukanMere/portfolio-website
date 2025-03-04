@@ -23,3 +23,9 @@ body {
 .light {
   @apply bg-bgLight;
 }
+
+.glow-item {
+  -webkit-box-shadow: 0px 0px 200px 20px rgba(86, 176, 255, 0.9);
+  -moz-box-shadow: 0px 0px 200px 20px rgba(86, 176, 255, 0.9);
+  box-shadow: 0px 0px 200px 20px rgba(86, 176, 255, 0.9);
+}

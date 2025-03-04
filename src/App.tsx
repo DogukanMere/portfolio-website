@@ -2,6 +2,8 @@ import './App.css';
 import './index.css';
 import useTheme from './hooks/useTheme';
 import Layout from './layout/Layout';
+import SectionWrapper from './components/SectionWrapper';
+import Intro from './pages/Intro';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -9,15 +11,15 @@ function App() {
 
   return (
     <Layout>
-      <div id='home' className='h-screen dark:text-bgLight text-bgDark'>
-        Test
-      </div>
-      <div id='about' className='h-screen'>
-        about
-      </div>
-      <div id='contact' className='h-screen'>
-        contact
-      </div>
+      <SectionWrapper sectionId='intro'>
+        <Intro />
+      </SectionWrapper>
+      <SectionWrapper sectionId='intro'>
+        <Intro />
+      </SectionWrapper>
+      <SectionWrapper sectionId='intro'>
+        <Intro />
+      </SectionWrapper>
     </Layout>
   );
 }
