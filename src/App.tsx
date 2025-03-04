@@ -14,7 +14,7 @@ function App() {
       <SectionWrapper sectionId='intro'>
         <Intro />
       </SectionWrapper>
-      <SectionWrapper sectionId='intro'>
+      <SectionWrapper sectionId='about'>
         <Intro />
       </SectionWrapper>
       <SectionWrapper sectionId='intro'>
