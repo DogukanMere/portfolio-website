@@ -18,8 +18,6 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
     document.body.style.overflow = isOpen ? 'auto' : 'hidden';
   };
 
-  console.log(theme);
-
   return (
     <nav className='fixed bg-bgNavLight h-10 px-3 py-10 mb-4 sm:mb-0 flex items-center justify-between sm:flex-col dark:bg-bgNavDark border-b-[2px] sm:border-r-[2px] sm:border-b-0 border-bgDark dark:border-bgLight w-full sm:h-screen sm:w-[12rem]  select-none z-10'>
       {/* Logo */}

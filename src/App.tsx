@@ -1,24 +1,18 @@
 import './App.css';
 import './index.css';
-import useTheme from './hooks/useTheme';
 import Layout from './layout/Layout';
 import SectionWrapper from './components/SectionWrapper';
 import Intro from './pages/Intro';
+import Skills from './pages/Skills';
 
 function App() {
-  const { theme, toggleTheme } = useTheme();
-  console.log(theme);
-
   return (
     <Layout>
-      <SectionWrapper sectionId='intro'>
+      <SectionWrapper sectionId='intro' isSectionMiddle={true}>
         <Intro />
       </SectionWrapper>
-      <SectionWrapper sectionId='about'>
-        <Intro />
-      </SectionWrapper>
-      <SectionWrapper sectionId='intro'>
-        <Intro />
+      <SectionWrapper sectionId='skills' headerName='skills'>
+        <Skills />
       </SectionWrapper>
     </Layout>
   );
