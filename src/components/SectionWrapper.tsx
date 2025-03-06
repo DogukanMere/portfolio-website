@@ -19,7 +19,7 @@ const SectionWrapper: React.FC<LayoutProps> = ({ children, sectionId, isSectionM
       className={`max-w-[1220px] mx-auto flex flex-col sm:px-16 ${isSectionMiddle ? 'items-center justify-center' : 'items-start justify-start'}`}>
       {headerName && (
         <div className='relative mx-auto sm:mx-0'>
-          <h2 className='uppercase text-bgDark dark:text-bgLight text-2xl sm:text-[3.5rem] font-bold text-center sm:text-start'>{headerName}</h2>
+          <h2 className='uppercase text-bgDark dark:text-bgLight text-2xl sm:text-[3.5rem] font-bold text-center sm:text-start mt-[7rem] sm:mt-10'>{headerName}</h2>
           <div className='glow-header relative top-0 sm:top-2'></div>
         </div>
       )}
