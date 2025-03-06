@@ -4,6 +4,7 @@ import Layout from './layout/Layout';
 import SectionWrapper from './components/SectionWrapper';
 import Intro from './pages/Intro';
 import Skills from './pages/Skills';
+import About from './pages/About';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </SectionWrapper>
       <SectionWrapper sectionId='skills' headerName='skills'>
         <Skills />
+      </SectionWrapper>
+      <SectionWrapper sectionId='about' headerName='about'>
+        <About />
       </SectionWrapper>
     </Layout>
   );

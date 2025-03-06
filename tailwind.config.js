@@ -6,6 +6,7 @@ export default {
     extend: {},
     colors: {
       bgDark: '#242424',
+      primaryDark: '#2d2d2d',
       bgNavDark: '#191919',
       bgLight: '#ffffff',
       bgNavLight: '#ffffff',

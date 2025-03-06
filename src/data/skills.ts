@@ -45,4 +45,17 @@ const skills = [
   { id: 21, title: 'Bootstrap', icon: bootstrap },
 ];
 
-export default skills;
+const technical_skills = [
+  { id: 1, header: 'Front End Development: ', skill: 'React, React Native, JavaScript, TypeScript, Next.js, Vite, Webpack, Material-UI, Tailwind, Bootstrap, JQuery' },
+  { id: 2, header: 'Back End Development: ', skill: 'JavaScript (Node.js), Java (Spring Boot), Next.js, Python/Django, PHP' },
+  { id: 3, header: 'Database Management: ', skill: 'SQL & NoSQL - Oracle, Prisma, MongoDB, MySQL, PostgreSQL' },
+  { id: 4, header: 'API: ', skill: 'REST APIs, GraphQL, WebSocket APIs, SOAP APIs' },
+  { id: 5, header: 'Cloud Platforms: ', skill: 'AWS (EC2, S3, CloudFront, Route 53, IAM), GCP (Google Cloud Platform)' },
+  { id: 6, header: 'Version Control: ', skill: 'Git, GitLab, GitHub' },
+  { id: 7, header: 'Tools & Processes: ', skill: 'VS Code, IntelliJ IDEA, Jira, Agile, Docker, CI/CD pipelines, Figma' },
+  { id: 8, header: 'Testing Frameworks: ', skill: 'Jest, Mockito, Pytest, Mocha, Vitest, React Testing Library' },
+  { id: 9, header: 'State Management (Front End Development): ', skill: 'Redux, Redux Toolkit, Zustand' },
+  { id: 10, header: 'AI Development | LLMs: ', skill: 'OpenAI, Llama, Anthropic, Gemini' },
+];
+
+export { skills, technical_skills };

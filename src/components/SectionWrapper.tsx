@@ -15,12 +15,12 @@ const SectionWrapper: React.FC<LayoutProps> = ({ children, sectionId, isSectionM
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1.4 }}
+      transition={{ duration: 1 }}
       className={`max-w-[1220px] mx-auto flex flex-col sm:px-16 ${isSectionMiddle ? 'items-center justify-center' : 'items-start justify-start'}`}>
       {headerName && (
         <div className='relative mx-auto sm:mx-0'>
-          <h2 className='uppercase text-bgDark dark:text-bgLight text-2xl sm:text-[3.5rem] font-bold text-center sm:text-start mt-[7rem] sm:mt-10'>{headerName}</h2>
-          <div className='glow-header relative top-0 sm:top-2'></div>
+          <h2 className='uppercase text-primaryDark opacity-[0.9] dark:opacity-[1] dark:text-bgLight text-4xl sm:text-[3.5rem] font-bold text-center sm:text-start mt-[7rem] sm:mt-10'>{headerName}</h2>
+          <div className='glow-header relative top-0 sm:top-4'></div>
         </div>
       )}
       {children}

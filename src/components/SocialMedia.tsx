@@ -6,7 +6,7 @@ type SocialMediaProps = {
 };
 const SocialMedia = ({ theme, isMobile }: SocialMediaProps) => {
   const isDarkTheme = theme === 'dark';
-  const iconStyle = `text-[2.2rem] text-bgLight hover:text-accent transition-colors duration-200 ${isDarkTheme ? 'sm:text-bgLight' : 'sm:text-bgDark'}`;
+  const iconStyle = `text-[2.2rem] text-bgLight hover:text-accent transition-colors duration-200 ${isDarkTheme ? 'sm:text-bgLight' : 'sm:text-primaryDark'}`;
 
   const socialList = [
     {

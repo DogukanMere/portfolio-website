@@ -53,7 +53,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
 
       {/* Desktop */}
       <>
-        <ul className='hidden sm:flex flex-col gap-y-6 uppercase font-semibold text-md tracking-[-0.4px]'>
+        <ul className='hidden sm:flex flex-col gap-y-6 uppercase font-semibold tracking-[-0.4px]'>
           <NavItem itemName='Home' link='#home' textColor={theme} />
           <NavItem itemName='Projects' link='#projects' textColor={theme} />
           <NavItem itemName='Skills' link='#skills' textColor={theme} />
