@@ -17,7 +17,7 @@ const Skills = () => {
       </div>
 
       {/* Detailed Skills */}
-      <h3 className='mt-16 mb-5 font-bold uppercase text-center sm:text-start text-lg sm:text-xl border-b-[2px] pb-1 sm:pb-2 border-bgDark dark:border-bgLight'>Technical Skills</h3>
+      <h3 className='mt-16 mb-5 font-bold uppercase text-center sm:text-start text-lg sm:text-xl text-accent border-b-2 pb-1 sm:pb-2 dark:border-accent'>Technical Skills</h3>
       <div className='flex flex-col gap-y-4 sm:gap-y-3 text-center sm:text-start text-sm sm:text-base'>
         {technical_skills.map((category) => {
           return (

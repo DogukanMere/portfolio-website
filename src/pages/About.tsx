@@ -12,7 +12,7 @@ const About = () => {
         </p>
       </div>
       {/* Education */}
-      <h3 className='mt-16 mb-5 font-bold uppercase text-lg sm:text-xl border-b-[2px] pb-1 sm:pb-2'>Education</h3>
+      <h3 className='mt-16 mb-5 text-accent font-bold uppercase text-lg sm:text-xl border-b-[2px] border-accent pb-1 sm:pb-2'>Education</h3>
       <div className='grid gird-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-6 sm:gap-y-10'>
         {educations.map((e) => {
           return (

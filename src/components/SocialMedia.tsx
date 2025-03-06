@@ -26,6 +26,7 @@ const SocialMedia = ({ theme, isMobile }: SocialMediaProps) => {
       {socialList.map((item) => {
         return (
           <div className='social-link' key={item.id}>
+            <div className={`glow-item relative top-6 select-none`}></div>
             <a href={item.socialLink} target='_blank' rel='noopener noreferrer'>
               {item.icon}
             </a>

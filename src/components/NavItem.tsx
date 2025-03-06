@@ -1,5 +1,3 @@
-import React from 'react';
-
 type NavItemProps = {
   itemName: string;
   link: string;
