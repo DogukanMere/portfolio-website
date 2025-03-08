@@ -5,6 +5,7 @@ import SectionWrapper from './components/SectionWrapper';
 import Intro from './pages/Intro';
 import Skills from './pages/Skills';
 import About from './pages/About';
+import EmailForm from './components/EmailForm';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <SectionWrapper sectionId='about' headerName='about me'>
         <About />
       </SectionWrapper>
+      <EmailForm />
     </Layout>
   );
 }

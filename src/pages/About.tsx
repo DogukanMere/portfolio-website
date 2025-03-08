@@ -16,7 +16,7 @@ const About = () => {
       <div className='grid gird-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-6 sm:gap-y-10'>
         {educations.map((e) => {
           return (
-            <div className='flex flex-col col-span-1 gap-y-0 sm:gap-y-1 scale-[0.9] sm:scale-[1]'>
+            <div className='flex flex-col col-span-1 gap-y-0 sm:gap-y-1 scale-[0.9] sm:scale-[1]' key={e.id}>
               <h4 className='text-lg font-semibold'>{e.degree}</h4>
               <p className='text-sm sm:text-[0.9rem] font-medium'>{e.school}</p>
               <p className='text-sm sm:text-[0.9rem]'>{e.program}</p>
