@@ -45,7 +45,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
                 <NavItem itemName='Skills' link='#skills' textColor={theme} isMobile={true} />
                 <NavItem itemName='About' link='#about' textColor={theme} isMobile={true} />
                 <NavItem itemName='Contact' link='#contact' textColor={theme} isMobile={true} />
-                <SocialMedia theme={theme} isMobile={true} />
+                <SocialMedia isMobile={true} />
               </ul>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
           <NavItem itemName='Contact' link='#contact' textColor={theme} />
         </ul>
       </>
-      <SocialMedia theme={theme} />
+      <SocialMedia />
     </nav>
   );
 };

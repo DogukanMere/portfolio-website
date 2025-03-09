@@ -10,6 +10,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.header-family {
+  font-family: 'Big Shoulders', sans-serif;
+}
+
 body {
   font-family: var(--font-family) !important;
   margin: 0;

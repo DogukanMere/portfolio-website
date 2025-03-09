@@ -1,12 +1,11 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa6';
 
 type SocialMediaProps = {
-  theme: string;
   isMobile?: boolean;
+  isInSection?: boolean;
 };
-const SocialMedia = ({ theme, isMobile }: SocialMediaProps) => {
-  const isDarkTheme = theme === 'dark';
-  const iconStyle = `text-[2.2rem] text-bgLight hover:text-accent transition-colors duration-200 ${isDarkTheme ? 'sm:text-bgLight' : 'sm:text-primaryDark'}`;
+const SocialMedia = ({ isMobile, isInSection }: SocialMediaProps) => {
+  const iconStyle = `text-[2.2rem] hover:text-accent dark:hover:text-accent transition-colors duration-200 ${isInSection ? 'text-primaryDark dark:text-bgLight' : 'text-bgLight'} dark:sm:text-bgLight sm:text-primaryDark`;
 
   const socialList = [
     {
@@ -22,7 +21,7 @@ const SocialMedia = ({ theme, isMobile }: SocialMediaProps) => {
   ];
 
   return (
-    <div className={`${isMobile ? 'absolute bottom-[5rem] flex gap-x-5' : 'sm:flex hidden gap-x-3 relative bottom-[1rem]'}`}>
+    <div className={`${isInSection ? 'flex gap-x-3' : isMobile ? 'absolute bottom-[5rem] flex gap-x-5' : 'sm:flex hidden gap-x-3 relative bottom-[1rem]'}`}>
       {socialList.map((item) => {
         return (
           <div className='social-link' key={item.id}>

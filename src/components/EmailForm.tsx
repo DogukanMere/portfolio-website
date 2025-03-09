@@ -28,16 +28,16 @@ const EmailForm = () => {
   const inputStyle = `px-3 py-3 sm:py-4 text-sm sm:text-[0.9rem] outline-accent overflow-hidden text-primaryDark dark:text-accent bg-bgLight dark:bg-blackTrans border-[2px] dark:border-0 border-bgDark`;
 
   return (
-    <div className=''>
-      <form onSubmit={handleSubmit} className={`flex flex-col gap-4 max-w-md mx-auto ${success && 'hidden'}`}>
+    <div className='w-full mt-10'>
+      <form onSubmit={handleSubmit} className={`flex flex-col gap-4 max-w-md mx-auto sm:mx-0 ${success && 'hidden'}`}>
         <input type='text' name='name' placeholder='Your Name' required className={inputStyle} onChange={handleChange} />
         <input type='email' name='email' placeholder='Your Email' required className={inputStyle} onChange={handleChange} />
         <textarea name='message' placeholder='Your Message' required className={inputStyle} onChange={handleChange} />
         <button
           disabled={isSending}
           type='submit'
-          className='p-2 bg-blue-500 text-primaryDark dark:text-bgLight rounded border-2 relative w-fit px-16 overflow-hidden hover:text-bgLight group hover:bg-blackTransDark dark:hover:bg-blackTrans mx-auto mt-5 transition-all duration-300 font-medium text-xs sm:text-base'>
-          {isSending ? 'Sending...' : 'Send'} {!isSending && <RiMailSendLine className='absolute group-hover:right-3 top-3 right-[-1rem] transition-all duration-300 group-hover:text-bgLight ' />}
+          className='p-2 bg-blue-500 text-primaryDark dark:text-bgLight rounded border-2 relative w-fit px-16 overflow-hidden hover:text-bgLight group hover:bg-primaryDark dark:hover:bg-blackTrans mx-auto mt-5 transition-all duration-300 font-semibold text-xs sm:text-base'>
+          {isSending ? 'SENDING......' : 'SEND'} {!isSending && <RiMailSendLine className='absolute group-hover:right-3 top-3 right-[-1rem] transition-all duration-300 group-hover:text-bgLight ' />}
         </button>
       </form>
       {success && (
