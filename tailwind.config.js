@@ -20,6 +20,7 @@ export default {
       blackTransDark: 'rgba(0, 0, 0, 0.9)',
       blackTrans: 'rgba(0, 0, 0, 0.6)',
       blackTransLight: 'rgba(0, 0, 0, 0.3)',
+      blackTransLighter: 'rgba(0, 0, 0, 0.2)',
       blackTransMain: 'rgba(0, 0, 0, 0.5)',
     },
   },

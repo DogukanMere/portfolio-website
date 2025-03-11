@@ -23,7 +23,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
       {/* Logo */}
       <a href='#home' className='p-3'>
         <div className={`glow-item relative top-6 select-none`}></div>
-        <img src={theme === 'dark' ? logo : logoDark} alt='Dogukan Logo' className='w-16 sm:w-24 ' />
+        <img src={theme === 'dark' ? logo : logoDark} alt='Dogukan Logo' className='w-14 sm:w-16 ' />
       </a>
 
       {/* Mobile */}
@@ -41,8 +41,8 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
             <div className='w-full max-w-[400px] p-8 mx-auto'>
               <ul className='h-screen flex flex-col relative justify-center items-center text-nowrap gap-y-10 font-bold uppercase'>
                 <NavItem itemName='Home' link='#home' textColor={theme} isMobile={true} />
-                <NavItem itemName='Projects' link='#projects' textColor={theme} isMobile={true} />
                 <NavItem itemName='Skills' link='#skills' textColor={theme} isMobile={true} />
+                <NavItem itemName='Projects' link='#projects' textColor={theme} isMobile={true} />
                 <NavItem itemName='About' link='#about' textColor={theme} isMobile={true} />
                 <NavItem itemName='Contact' link='#contact' textColor={theme} isMobile={true} />
                 <SocialMedia isMobile={true} />
@@ -56,8 +56,8 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
       <>
         <ul className='hidden sm:flex flex-col gap-y-6 uppercase font-semibold tracking-[-0.4px]'>
           <NavItem itemName='Home' link='#home' textColor={theme} />
-          <NavItem itemName='Projects' link='#projects' textColor={theme} />
           <NavItem itemName='Skills' link='#skills' textColor={theme} />
+          <NavItem itemName='Projects' link='#projects' textColor={theme} />
           <NavItem itemName='About' link='#about' textColor={theme} />
           <NavItem itemName='Contact' link='#contact' textColor={theme} />
         </ul>
