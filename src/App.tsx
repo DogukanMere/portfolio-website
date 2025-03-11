@@ -17,7 +17,7 @@ function App() {
       <SectionWrapper sectionId='skills' headerName='skills'>
         <Skills />
       </SectionWrapper>
-      <SectionWrapper sectionId='projects' headerName='projects'>
+      <SectionWrapper sectionId='projects' headerName='projects' isNotAnimated={true}>
         <Projects />
       </SectionWrapper>
       <SectionWrapper sectionId='about' headerName='about me'>

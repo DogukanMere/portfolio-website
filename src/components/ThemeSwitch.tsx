@@ -2,11 +2,10 @@ import { FaMoon } from 'react-icons/fa6';
 import { IoSunny } from 'react-icons/io5';
 
 type ThemeSwitchProps = {
-  theme: string;
   setTheme: () => void;
 };
 
-const ThemeSwitch = ({ setTheme, theme }: ThemeSwitchProps) => {
+const ThemeSwitch = ({ setTheme }: ThemeSwitchProps) => {
   return (
     <div className='fixed w-10 h-10 right-20 top-[1.3rem] sm:left-[4.2rem] group sm:top-[8rem] bg-primaryDark dark:bg-bgLight rounded-full overflow-hidden cursor-pointer select-none z-20' onClick={setTheme}>
       <div className='relative'>

@@ -1,12 +1,11 @@
 type NavItemProps = {
   itemName: string;
   link: string;
-  textColor: string;
   isMobile?: boolean;
 };
 
 const NavItem = (props: NavItemProps) => {
-  const { itemName, link, textColor, isMobile } = props;
+  const { itemName, link, isMobile } = props;
   return (
     <li className='cursor-pointer relative group'>
       <a href={link} className={`${!isMobile ? 'text-primaryDark group-hover:text-bgLight dark:text-bgLight dark:group-hover:text-primaryDark text-lg' : 'text-[1.5rem] group-hover:text-accent'} z-10 relative top-0 left-0 transition-all duration-200`}>

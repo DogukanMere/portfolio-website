@@ -7,8 +7,8 @@ const Skills = () => {
         {skills.map((skill) => {
           return (
             <div key={skill.id} className='flex flex-col flex-nowrap items-center justify-center bg-none p-3 py-5 w-[5rem] h-[5.5rem] sm:h-[7.5rem] sm:w-[8rem] gap-y-2 relative'>
-              <img src={skill.icon} alt={skill.title} className={`w-[1rem] sm:w-[2rem] relative top-[-0.4rem]`} />
-              <span className='text-[10px] sm:text-base font-medium text-primaryDark dark:text-bgLight text-center text-nowrap absolute bottom-3'>{skill.title}</span>
+              <img src={skill.icon} alt={skill.title} className={`w-[2rem] relative top-[-0.4rem]`} />
+              <span className='text-[12px] sm:text-base font-medium text-primaryDark dark:text-bgLight text-center text-nowrap absolute bottom-3'>{skill.title}</span>
             </div>
           );
         })}

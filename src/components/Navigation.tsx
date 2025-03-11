@@ -40,11 +40,11 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
           <div className='sm:hidden fixed top-0 left-0 w-full h-fit z-40 overflow-y-auto' onClick={toggleMenu}>
             <div className='w-full max-w-[400px] p-8 mx-auto'>
               <ul className='h-screen flex flex-col relative justify-center items-center text-nowrap gap-y-10 font-bold uppercase'>
-                <NavItem itemName='Home' link='#home' textColor={theme} isMobile={true} />
-                <NavItem itemName='Skills' link='#skills' textColor={theme} isMobile={true} />
-                <NavItem itemName='Projects' link='#projects' textColor={theme} isMobile={true} />
-                <NavItem itemName='About' link='#about' textColor={theme} isMobile={true} />
-                <NavItem itemName='Contact' link='#contact' textColor={theme} isMobile={true} />
+                <NavItem itemName='Home' link='#home' isMobile={true} />
+                <NavItem itemName='Skills' link='#skills' isMobile={true} />
+                <NavItem itemName='Projects' link='#projects' isMobile={true} />
+                <NavItem itemName='About' link='#about' isMobile={true} />
+                <NavItem itemName='Contact' link='#contact' isMobile={true} />
                 <SocialMedia isMobile={true} />
               </ul>
             </div>
@@ -55,11 +55,11 @@ const Navigation: React.FC<NavigationProps> = ({ theme }) => {
       {/* Desktop */}
       <>
         <ul className='hidden sm:flex flex-col gap-y-6 uppercase font-semibold tracking-[-0.4px]'>
-          <NavItem itemName='Home' link='#home' textColor={theme} />
-          <NavItem itemName='Skills' link='#skills' textColor={theme} />
-          <NavItem itemName='Projects' link='#projects' textColor={theme} />
-          <NavItem itemName='About' link='#about' textColor={theme} />
-          <NavItem itemName='Contact' link='#contact' textColor={theme} />
+          <NavItem itemName='Home' link='#home' />
+          <NavItem itemName='Skills' link='#skills' />
+          <NavItem itemName='Projects' link='#projects' />
+          <NavItem itemName='About' link='#about' />
+          <NavItem itemName='Contact' link='#contact' />
         </ul>
       </>
       <SocialMedia />

@@ -6,16 +6,17 @@ interface LayoutProps {
   sectionId: string;
   isSectionMiddle?: boolean;
   headerName?: string;
+  isNotAnimated?: boolean;
 }
 
-const SectionWrapper: React.FC<LayoutProps> = ({ children, sectionId, isSectionMiddle, headerName }) => {
+const SectionWrapper: React.FC<LayoutProps> = ({ children, sectionId, isSectionMiddle, headerName, isNotAnimated }) => {
   return (
     <motion.section
       id={sectionId}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={isNotAnimated ? { opacity: 1, y: 50 } : { opacity: 0, y: 50 }}
+      whileInView={isNotAnimated ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 1 }}
+      transition={isNotAnimated ? { duration: 0 } : { duration: 1 }}
       className={`max-w-[1220px] mx-auto flex flex-col sm:px-16 ${isSectionMiddle ? 'items-center justify-center' : 'items-start justify-start'}`}>
       {headerName && (
         <div className='relative mx-auto sm:mx-0'>

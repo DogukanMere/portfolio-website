@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }} id='home' className='flex flex-col sm:flex-row min-h-screen'>
       <Navigation theme={theme} />
-      <ThemeSwitch theme={theme} setTheme={toggleTheme} />
+      <ThemeSwitch setTheme={toggleTheme} />
       <div className='px-4 sm:pl-[14rem] sm:pr-[2rem] w-full'>
         <main className=''>{children}</main>
         <footer className='w-full text-center py-7 font-medium text-[0.7rem] text-primaryDark dark:text-bgLight'>© Dogukan Mere 2025</footer>
