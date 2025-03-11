@@ -34,7 +34,7 @@ const Projects = () => {
                         },
                       },
                     }}>
-                    <Carousel className='w-[290px] h-[290px]' draggable>
+                    <Carousel className='w-[290px] h-[290px]' draggable autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
                       {project?.img?.map((img, index) => {
                         return (
                           <div key={index} className='w-[290px] h-[290px] overflow-hidden select-none'>
