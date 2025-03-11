@@ -13,7 +13,7 @@ const SectionWrapper: React.FC<LayoutProps> = ({ children, sectionId, isSectionM
   return (
     <motion.section
       id={sectionId}
-      initial={isNotAnimated ? { opacity: 1, y: 50 } : { opacity: 0, y: 50 }}
+      initial={isNotAnimated ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       whileInView={isNotAnimated ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={isNotAnimated ? { duration: 0 } : { duration: 1 }}
