@@ -1,1 +1,1 @@
-# React + TypeScript + Vite PORTFOLIO WEBSITE
+# React + TypeScript PORTFOLIO WEBSITE
